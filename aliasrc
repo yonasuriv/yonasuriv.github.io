@@ -1,0 +1,46 @@
+################################################################################
+ # ZSH ALIAS
+ ################################################################################
+ 
+ # Writting the ":D" emoji shows as an output a cow saying something (with colors)
+ alias :D="cowsay De que te reis pedazo de forro | lolcat"
+ # Moves to root directory
+ alias gtr="cd /"
+ # Moves to home directory
+ alias gth="cd /home"
+ # Moves to user directory
+ alias gtu="cd /home/yonasuriv/"
+ # Moves to user projects directory
+ alias gtp="cd ~/Proyectos"
+ # Moves to user downloads directory
+ alias gtd="cd ~/Downloads"
+ # Open the .zshrc editor and then return to user projects directory
+ alias zc="cd;code .zshrc && gtu"
+ # Open a website on explorer
+ alias start="xdg-open"
+ # Open the current directory in explorer
+ alias explorer="xdg-open ."
+ # Install packages from the internet (like install cowsay)
+ alias install ="sudo apt install"
+ # Install apps (that you have downloaded, you have to be on that directory to exec this command)
+ alias installapp="sudo dpkg -i"
+ # Uninstall apps/packages
+ alias remove="sudo apt-get remove"
+ 
+ ################################################################################
+ # GIT ALIAS
+ ################################################################################
+ 
+ # Shows a git log file resumed
+ alias git logr="git log --oneline"
+
+ ################################################################################
+ # BLOCKCHAIN DEV
+ ################################################################################
+
+ # Fix to ganache-cli, might break some other commands, it can be fixed by exiting the terminal and reopening again
+ alias fixganache="export NODE_OPTIONS=--openssl-legacy-provider"
+
+ export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
