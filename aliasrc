@@ -14,18 +14,22 @@
  alias gtp="cd ~/Proyectos"
  # Moves to user downloads directory
  alias gtd="cd ~/Downloads"
- # Open the .zshrc editor and then return to user projects directory
- alias zc="cd;code .zshrc && gtu"
+ # Open the .zshrc editor and then return to user projects directory (first check vscode, second vscodium)
+ alias zc="cd;code .zshrc && gtu || cd;codium .zshrc && gtu "
  # Open a website on explorer
  alias start="xdg-open"
  # Open the current directory in explorer
  alias explorer="xdg-open ."
  # Install packages from the internet (like install cowsay)
- alias install ="sudo apt install"
+ alias inst ="sudo apt install"
  # Install apps (that you have downloaded, you have to be on that directory to exec this command)
- alias installapp="sudo dpkg -i"
+ alias instpkg="sudo dpkg -i"
  # Uninstall apps/packages
  alias remove="sudo apt-get remove"
+ # Update and upgrades packages
+ alias actnow="sudo apt update && sudo apt upgrade"
+ # Updated code command to fix some issues related to vscode breaks on update
+ alias code="code || codium"
  
  ################################################################################
  # GIT ALIAS
@@ -44,3 +48,11 @@
  export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+ ################################################################################
+ # ZSH CONFIG (to customize prompt, run `p10k configure` or edit ~/.p10k.zsh.)
+ ################################################################################
+ [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+ # Disable configuration wizard on every terminal start up
+ POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
