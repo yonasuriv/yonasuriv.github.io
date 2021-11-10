@@ -1,7 +1,7 @@
 ################################################################################
  # ZSH ALIAS
  ################################################################################
- 
+  
  # Writting the ":D" emoji shows as an output a cow saying something (with colors)
  alias :D="cowsay De que te reis pedazo de forro | lolcat"
  # Moves to root directory
