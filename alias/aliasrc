@@ -1,0 +1,58 @@
+ ################################################################################
+ # ZSH ALIAS
+ ################################################################################
+ 
+ # Writting the ":D" emoji shows as an output a cow saying something (with colors)
+ alias :D="cowsay De que te reis pedazo de forro | lolcat"
+ # Moves to root directory
+ alias gtr="cd /"
+ # Moves to home directory
+ alias gth="cd /home"
+ # Moves to user directory
+ alias gtu="cd /home/yonasuriv/"
+ # Moves to user projects directory
+ alias gtp="cd ~/Proyectos"
+ # Moves to user downloads directory
+ alias gtd="cd ~/Downloads"
+ # Open the .zshrc editor and then return to user projects directory (first check vscode, second vscodium)
+ alias zc="cd;code .zshrc && gtu || cd;codium .zshrc && gtu "
+ # Open a website on explorer
+ alias start="xdg-open"
+ # Open the current directory in explorer
+ alias explorer="xdg-open ."
+ # Install apps (that you have downloaded, you have to be on that directory to exec this command)
+ alias instpkg="sudo dpkg -i"
+ # Uninstall apps/packages
+ alias remove="sudo apt-get remove"
+ # Update packages, remove any unnecessary ones and upgrades them
+ alias actnow="sudo apt update && sudo apt autoremove && sudo apt full-upgrade"
+ # Updated code command to fix some issues related to vscode breaks on update
+ 
+ # Git related
+ # Shows a git log file resumed
+ alias git logr="git log --oneline"
+
+ ################################################################################
+ # ZSH CONFIG 
+ # (to customize prompt, run `p10k configure` or edit ~/.p10k.zsh.)
+ ################################################################################
+ 
+ [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+ # Fix issues with p10k wizard 
+ alias fixzsh="POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true"
+
+ 
+ ################################################################################
+ # Other configs
+ ################################################################################
+ 
+ # Fix issues with snap apps not showing in launcher
+ export XDG_DATA_DIRS="${XDG_DATA_DIRS}:/var/lib/snapd/desktop"
+ # Blockchain related
+ # Fix to ganache-cli, might break some other commands, it can be fixed by exiting the terminal and reopening again
+ alias fixganache="export NODE_OPTIONS=--openssl-legacy-provider"
+ # NVM/NPM related
+ export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
