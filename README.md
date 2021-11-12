@@ -3,12 +3,17 @@
 ##  SSH key
 ### Generating your SSH key
 Open your terminal and write: 
+
 $ ssh-keygen -t ed25519 -C "your@email.com"
 
 The following will be asked:
+
 Enter file in which to save the key (/home/yonasuriv/.ssh/id_ed25519): press_enter
+
 Enter passphrase (empty for no passphrase): set_your_passphrase
+
 Enter same passphrase again: repeat_your_passphrase
+
 
 ### Adding your SSH key to the ssh-agent
 Start the ssh-agent in the background
@@ -21,6 +26,7 @@ Add your SSH private key to the ssh-agent. If you created your key with a differ
 $ ssh-add ~/.ssh/id_ed25519
 
 For more info: 
+
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 Now go to /home/yonasuriv/.ssh
