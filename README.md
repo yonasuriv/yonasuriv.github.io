@@ -46,3 +46,4 @@ Set up a key name and paste the public key you copied from your .pub file
 2- Paste the following
 
 > $ git clone git@github.com:yonasuriv/yonasuriv.github.io.git
+> $ git remote add https://github.com/yonasuriv/yonasuriv.github.io
