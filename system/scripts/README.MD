@@ -1,6 +1,9 @@
-# Install all programs by running sh installer.sh
 ### Tested only on parrot
 
-# Multi USB boot loader WILL NOT run by default
-To do so run 
-$ sh ventoy.sh
+# Install all programs by running sh installer.sh
+
+
+### Visual Studio Code disabled to due VSCodium incompatbility, has to be manually installed.
+
+### Multi USB boot loader WILL NOT run by default, to do so run:
+```$ sh ventoy.sh```
