@@ -1,40 +1,50 @@
-# To get this repository in your desktop:
-
-##  SSH key
-### Generating your SSH key
-Open your terminal and write: 
-
-```$ ssh-keygen -t ed25519 -C "your@email.com"```
-
-The following will be asked:
-
-Enter file in which to save the key (/home/yonasuriv/.ssh/id_ed25519): **press_enter**
-
-Enter passphrase (empty for no passphrase): **set_your_passphrase**
-
-Enter same passphrase again: **repeat_your_passphrase**
+# Setting up everything
 
 
-### Adding your SSH key to the ssh-agent
-Start the ssh-agent in the background
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-```$ eval "$(ssh-agent -s)"```
 
-Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file.
 
-```$ ssh-add ~/.ssh/id_ed25519```
+## Set up git in your terminal/shell
+_(Don’t type the $; that just indicates that you’re doing this at the command line.)_
 
-For more info: 
+Open a terminal/shell and type:
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+```$ git config --global user.name "Your name here"```
 
-Now go to ```cd /home/yonasuriv/.ssh```
+```$ git config --global user.email "your_email@example.com"```
 
-Open id_ed25519.pub and copy the code inside
+I also do
 
-Go to https://github.com/settings/keys and create a new key
+```$ git config --global color.ui true```
 
-Set up a key name and paste the public key you copied from your .pub file
+```$ git config --global core.editor emacs```
+
+The first of these will enable colored output in the terminal; the second tells git that you want to use emacs.
+
+## Set up SSH in your computer
+- Look to see if you have files ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub.
+- If not, create such public/private keys: Open a terminal/shell and type:
+```$ ssh-keygen -t rsa -C "your_email@example.com"```
+
+- Copy your public key (the contents of the newly-created id_rsa.pub file) into your clipboard. 
+(it's located in ~/.ssh/ by default on Linux)
+- Paste your ssh public key into your github account settings.
+  - Go to your github Account Settings
+  - Click on “[SSH Keys](https://github.com/settings/keys)” (or GitHub Account/Settings/SSH Keys)
+  - Click “Add SSH Key” on the right.
+  - Add a label (like “My laptop”) and paste the public key into the big text box.
+  
+
+In a terminal/shell, type the following to test it:
+```$ ssh -T git@github.com```
+
+If it says something like the following, **it worked**:
+
+> Hi username! You've successfully authenticated, but Github does not provide shell access.
+
+
+<!-- 
 
 ## Creating your personal token and linking it
 You'll need to set up a login and email address in the local GIT client for Linux
@@ -77,3 +87,4 @@ You may now cache the provided record on your computer to store the token.
 2- Paste the following
 
 > $ git clone git@github.com:yonasuriv/yonasuriv.github.io.git
+-->
