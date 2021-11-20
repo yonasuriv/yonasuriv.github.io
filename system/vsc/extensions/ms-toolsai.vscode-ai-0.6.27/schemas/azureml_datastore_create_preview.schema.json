@@ -1,0 +1,38 @@
+{
+    "title": "AzureMLDatastoreCreatePreview",
+    "type": "object",
+    "properties": {
+        "datastore": {
+            "type": "object",
+            "description": "Azure ML Datastore Registration Preview",
+            "properties": {
+                "datastoreName": {
+                    "type": "string",
+                    "description": "Datastore name must be between 1-255 lowercase letters, digits, and underscore.",
+                    "pattern": "^[a-z0-9_]{1,255}$"
+                },
+                "authenticationType": {
+                    "type": "string",
+                    "description": "Credential type",
+                    "enum": [
+                        "AccountKey",
+                        "Sas"
+                    ]
+                },
+                "authenticationCredential": {
+                    "type": "string",
+                    "description": "Credential",
+                    "minLength": 1
+                }
+            },
+            "required": [
+                "datastoreName",
+                "authenticationType",
+                "authenticationCredential"
+            ]
+        }
+    },
+    "required": [
+        "datastore"
+    ]
+}
