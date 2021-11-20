@@ -1,10 +1,10 @@
 # -Packages-
-sudo apt-get install npm  
-sudo apt-get install snapd
+# sudo apt-get install npm  
+# sudo apt-get install snapd
 
 # -Necessary programs-
 # Discover Software Center
-sudo apt-get install plasma-discover -f
+# sudo apt-get install plasma-discover -f
 
 # Brave Browser
 sudo apt install apt-transport-https curl
@@ -91,7 +91,7 @@ codium README.MD
 echo Run 'p10k configure' to configure your theme. | lolcat
 exit 0
 else
-	echo "invalid answer, type yes or no";
+	echo "invalid answer, type yes or no (Y/N)";
 fi
 
 

@@ -70,11 +70,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 	# Moves to root directory
 	alias gtr="cd /"
 	# Moves to home directory
-	alias gth="cd /home"
-	# Moves to user directory
-	alias gtu="cd /home/yonasuriv/"
+	alias gth="cd ~"
+	# Moves to home directory
+	alias gto="cd ~/Main/yonasuriv.github.io/"
 	# Moves to user projects directory
-	alias gtp="cd ~/Proyectos"
+	alias gtp="cd ~/Main/Proejcts"
 	# Moves to user downloads directory
 	alias gtd="cd ~/Downloads"
 	# Open the .zshrc editor and then return to user projects directory (first check vscode, second vscodium)
@@ -83,11 +83,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 	alias explorer="xdg-open ."
 	# Install apps (that you have downloaded, you have to be on that directory to exec this command)
 	alias instpkg="sudo dpkg -i"
-	# Uninstall apps/packages
-	alias remove="sudo apt-get remove"
 	# Update packages, remove any unnecessary ones and upgrades them
-	alias actnow="sudo apt update && sudo apt autoremove && sudo apt --fix-broken install && sudo apt full-upgrade"
-	# Updated code command to fix some issues related to vscode breaks on update
+	alias fupg="sudo apt update && sudo apt autoremove && sudo apt --fix-broken install && sudo apt full-upgrade"
+	# Update zshrc archive
+	alias zshupg="sudo cp .zshrc ~/"
 	
 	# Git related
 	# Shows a git log file resumed
