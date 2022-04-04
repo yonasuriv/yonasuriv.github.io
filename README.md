@@ -4,9 +4,9 @@ _(Don’t type the $; that just indicates that you’re doing this at the comman
 
 Open a terminal/shell and type:
 
-```$ git config --global user.name "Your name here"```
+```$ git config --global user.name "Jonathan Di Rico"```
 
-```$ git config --global user.email "your_email@example.com"```
+```$ git config --global user.email "youremail@gmail.com"```
 
 I also do
 
@@ -19,7 +19,8 @@ The first of these will enable colored output in the terminal; the second tells 
 ## Set up SSH in your computer
 - Look to see if you have files ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub.
 - If not, create such public/private keys: Open a terminal/shell and type:
-```$ ssh-keygen -t rsa -C "your_email@example.com"```
+
+```$ ssh-keygen -t rsa -C "youremail@gmail.com"```
 
 - Copy your public key (the contents of the newly-created id_rsa.pub file) into your clipboard. 
 (it's located in ~/.ssh/ by default on Linux)
@@ -48,7 +49,9 @@ Go to https://github.com/settings/ and generate your new token
 Copy your token selected 
 
 ```$ git config --global user.name "yonasuriv"``` 
+
 ```$ git config --global user.email "diricojonathan@gmail.com"``` 
+
 ```$ git config -l```
 
 After configuring GIT, we can use it to access GitHub. Use your Github Personal Access Token instead of the password
