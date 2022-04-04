@@ -72,7 +72,9 @@ You may now cache the provided record on your computer to store the token.
 ```$ git pull -v```
 
 > You can remove the cache record if necessary.
+
 ```$ git config --global --unset credential.helper```
+
 ```$ git config --system --unset credential.helper```
 
 # Getting the repository
