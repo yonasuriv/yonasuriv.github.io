@@ -1,4 +1,4 @@
-# Setting up everything
+# Setting up the Workspace
 ## Set up git in your terminal/shell
 _(Don’t type the $; that just indicates that you’re doing this at the command line.)_
 
