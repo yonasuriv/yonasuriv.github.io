@@ -101,7 +101,7 @@ You may now cache the provided record on your computer to store the token.
 - Use ```git init``` to initialize the repository.
 - Use ```git add .``` to add all the files to the given folder.
 - Use ```git status``` to view all the files which are going to be staged to the first commit.
-- Save your changes using ```git commit -m 'your message'```
+- Use ```git commit -m 'your message'``` to save your changes
 - Use ```git pull ```
 - Use ```git push```
 
