@@ -67,13 +67,13 @@ You may now cache the provided record on your computer to store the token.
 
 ```$ git config --global credential.helper cache```
 
-> To verify, try pulling with -v.
-> 
-> $ git pull -v
+ To verify, try pulling with -v.
+
+```$ git pull -v```
+
 > You can remove the cache record if necessary.
-> 
-> $ git config --global --unset credential.helper 
-> $ git config --system --unset credential.helper
+```$ git config --global --unset credential.helper```
+```$ git config --system --unset credential.helper```
 
 # Getting the repository
 1- Open your terminal and navigate to the folder where do you want your repository to be downloaded
