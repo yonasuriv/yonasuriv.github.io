@@ -44,13 +44,13 @@ If it says something like the following, **it worked**:
 ## Creating your personal token and linking it
 You'll need to set up a login and email address in the local GIT client for Linux
 
-Go to https://github.com/settings/ and generate your new token
+Go to https://github.com/settings/tokens/new and generate your new token; selecting repo only is OK.
 
 Copy your token selected 
 
 ```$ git config --global user.name "yonasuriv"``` 
 
-```$ git config --global user.email "diricojonathan@gmail.com"``` 
+```$ git config --global user.email "youremail@gmail.com"``` 
 
 ```$ git config -l```
 
