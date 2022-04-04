@@ -56,7 +56,7 @@ If it says something like the following, **it worked**:
 
 ```$ git clone git@github.com:yonasuriv/yonasuriv.github.io.git``` 
 
-Now you will be asked to logg in
+Now you will be asked to log in
 
 Use your Github Personal Access Token instead of the password
 
@@ -64,13 +64,16 @@ Use your Github Personal Access Token instead of the password
 > 
 > $ Password for 'https://github.com' : **Enter your github personal access token here**
 
+
 You may now cache the provided record on your computer to store the token.
 
 ```$ git config --global credential.helper cache```
 
+
  To verify, try pulling with -v.
 
 ```$ git pull -v```
+
 
 > You can remove the cache record if necessary.
 
