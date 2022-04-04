@@ -1,6 +1,0 @@
-# Create a text portrait using 2 lines of CSS
-
-p {
-    background: url(https://pps.whatsapp.net/v/t61.24694-24/212545123_4079716635471146_7250675829734682940_n.jpg?ccb=11-4&oh=b8ae9a4abbbcfdc08f3b21a4e8dce51c&oe=6184B3E2);
-    -webkit-background-clip: text;
-}
