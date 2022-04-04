@@ -38,13 +38,16 @@ If you wanna see the data stored:
 ```$ git config -l```
 
 ## Setting up SSH in your computer
-- Look to see if you have files ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub.
-- If not, create such public/private keys: Open a terminal/shell and type:
+- Open a terminal/shell and type:
 
 ```$ ssh-keygen -t rsa -C "youremail@gmail.com"```
 
-- Copy your public key (the contents of the newly-created id_rsa.pub file) into your clipboard. 
-(it's located in ~/.ssh/ by default on Linux)
+> A public (id_rsa.pub) and a private (id_rsa) key will be created
+
+- Copy your public key (.pub) into your clipboard. 
+
+> (it's located in ~/.ssh/ by default on Linux)
+
 - Paste your ssh public key into your github account settings.
   - Go to your github Account Settings
   - Click on “[SSH Keys](https://github.com/settings/keys)” (or GitHub Account/Settings/SSH Keys)
