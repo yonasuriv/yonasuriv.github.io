@@ -42,7 +42,13 @@ If you wanna see the data stored:
 
 ```$ ssh-keygen -t rsa -C "youremail@gmail.com"```
 
-> A public (id_rsa.pub) and a private (id_rsa) key will be created
+You will be asked some questions, just press enter 3 times.
+
+> Generating public/private rsa key pair.
+> 
+> Enter file in which to save the key (/home/kali/.ssh/id_rsa):
+
+A public (id_rsa.pub) and a private (id_rsa) key will be created
 
 - Copy your public key (.pub) into your clipboard. 
 
@@ -50,7 +56,7 @@ If you wanna see the data stored:
 
 - Paste your ssh public key into your github account settings.
   - Go to your github Account Settings
-  - Click on “[SSH Keys](https://github.com/settings/keys)” (or GitHub Account/Settings/SSH Keys)
+  - Click on “[SSH and GPG keys] (https://github.com/settings/keys)”
   - Click “Add SSH Key” on the right.
   - Add a label (like “My laptop”) and paste the public key into the big text box.
   
@@ -58,15 +64,23 @@ If you wanna see the data stored:
 In a terminal/shell, type the following to test it:
 ```$ ssh -T git@github.com```
 
-If it says something like the following, **it worked**:
+If it says something like the following:
 
 > Hi username! You've successfully authenticated, but Github does not provide shell access.
 
+**Congratulations, it worked. You may now start working.**
+
+> HINT: At the bottom of this guide I left you the basic commands in case you were absent from git for a while and you need to refresh your memory a bit.
+
+
+
+# Fixing log in issues
+If at any given point you are asked to use a personal access token, follow these steps:
 
 ## Creating your Personal Access Token
 - Go to https://github.com/settings/tokens/new and generate your new token 
   - Selecting 'repo' only is OK.
-  - Copy your token
+  - Save your token (copy it, you will use it in the next step)
 
 ## Linking your PAS with your Terminal
 
@@ -96,7 +110,7 @@ You may now cache the provided record on your computer to store the token.
 ```$ git config --global --unset credential.helper```
 
 ```$ git config --system --unset credential.helper```
-
+#
 ### Fast-reminder of the basics
 - Use ```git init``` to initialize the repository.
 - Use ```git add .``` to add all the files to the given folder.
