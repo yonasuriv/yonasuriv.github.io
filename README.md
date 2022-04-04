@@ -1,4 +1,19 @@
-# Setting up everything
+# Setting up GitHub
+# Getting the repository
+- Open your terminal and navigate to the folder where do you want your repository to be downloaded
+  - Navigate to the folder where do you want your repository to be downloadedG
+  - Open in terminal (right click)
+
+> If using Linux, you can also use the *cd* command, like:
+>
+> $ cd /home/yonasuriv/Data Center/Web Server
+>
+> Remember to create the directory in case it doesn't exist with *mkdir* command!
+
+- Paste the following:
+
+> $ git clone git@github.com:yonasuriv/yonasuriv.github.io.git
+
 ## Setting up git in your terminal/shell
 You'll need to set up a login and email address in the local GIT client for Linux
 
@@ -45,14 +60,12 @@ If it says something like the following, **it worked**:
 > Hi username! You've successfully authenticated, but Github does not provide shell access.
 
 
- 
-
 ## Creating your Personal Access Token
 - Go to https://github.com/settings/tokens/new and generate your new token 
   - Selecting 'repo' only is OK.
   - Copy your token
-  - Go to the directory where you want to clone your repository
-  - Open in terminal (right click)
+
+## Linking your PAS with your Terminal
 
 ```$ git clone git@github.com:yonasuriv/yonasuriv.github.io.git``` 
 
@@ -80,14 +93,4 @@ You may now cache the provided record on your computer to store the token.
 ```$ git config --global --unset credential.helper```
 
 ```$ git config --system --unset credential.helper```
-
-# Getting the repository
-1- Open your terminal and navigate to the folder where do you want your repository to be downloaded
-> You can also use the cd command, like
-> $ cd /home/yonasuriv/Proyectos/GitHub
-> remember to create a directory in case it doesn't exist with mkdir command
-
-2- Paste the following
-
-> $ git clone git@github.com:yonasuriv/yonasuriv.github.io.git
 
