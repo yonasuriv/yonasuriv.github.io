@@ -1,6 +1,8 @@
 # Setting up everything
-## Set up git in your terminal/shell
-_(Don’t type the $; that just indicates that you’re doing this at the command line.)_
+## Setting up git in your terminal/shell
+You'll need to set up a login and email address in the local GIT client for Linux
+
+_(The $ is just an indicator that you are working on the terminal via command line)_
 
 Open a terminal/shell and type:
 
@@ -8,7 +10,7 @@ Open a terminal/shell and type:
 
 ```$ git config --global user.email "youremail@gmail.com"```
 
-I also do
+Optional:
 
 ```$ git config --global color.ui true```
 
@@ -16,7 +18,11 @@ I also do
 
 The first of these will enable colored output in the terminal; the second tells git that you want to use emacs.
 
-## Set up SSH in your computer
+If you wanna see the data stored:
+
+```$ git config -l```
+
+## Setting up SSH in your computer
 - Look to see if you have files ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub.
 - If not, create such public/private keys: Open a terminal/shell and type:
 
@@ -41,27 +47,22 @@ If it says something like the following, **it worked**:
 
  
 
-## Creating your personal token and linking it
-You'll need to set up a login and email address in the local GIT client for Linux
+## Creating your Personal Access Token
+- Go to https://github.com/settings/tokens/new and generate your new token 
+  - Selecting 'repo' only is OK.
+  - Copy your token
+  - Go to the directory where you want to clone your repository
+  - Open in terminal (right click)
 
-Go to https://github.com/settings/tokens/new and generate your new token; selecting repo only is OK.
+```$ git clone git@github.com:yonasuriv/yonasuriv.github.io.git``` 
 
-Copy your token selected 
+Now you will be asked to logg in
 
-```$ git config --global user.name "yonasuriv"``` 
-
-```$ git config --global user.email "youremail@gmail.com"``` 
-
-```$ git config -l```
-
-After configuring GIT, we can use it to access GitHub. Use your Github Personal Access Token instead of the password
-
-```$ git clone $ git clone git@github.com:yonasuriv/yonasuriv.github.io.git``` 
+Use your Github Personal Access Token instead of the password
 
 > $ Username for 'https://github.com' : **Enter your github username**
 > 
 > $ Password for 'https://github.com' : **Enter your github personal access token here**
-
 
 You may now cache the provided record on your computer to store the token.
 
