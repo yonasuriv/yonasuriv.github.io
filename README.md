@@ -1,10 +1,4 @@
 # Setting up everything
-
-
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-
-
 ## Set up git in your terminal/shell
 _(Don’t type the $; that just indicates that you’re doing this at the command line.)_
 
@@ -44,7 +38,7 @@ If it says something like the following, **it worked**:
 > Hi username! You've successfully authenticated, but Github does not provide shell access.
 
 
-<!-- 
+ 
 
 ## Creating your personal token and linking it
 You'll need to set up a login and email address in the local GIT client for Linux
@@ -87,4 +81,4 @@ You may now cache the provided record on your computer to store the token.
 2- Paste the following
 
 > $ git clone git@github.com:yonasuriv/yonasuriv.github.io.git
--->
+
