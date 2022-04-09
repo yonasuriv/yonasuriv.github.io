@@ -1,3 +1,4 @@
+<image src="https://readme-typing-svg.herokuapp.com?font=Iosevka&size=16&color=BC83E3&center=true&width=410&height=45&lines=Who's+gonna+save+the+world?">
 <!-- # Setting up GitHub
 # Getting the repository
 - Open your terminal and navigate to the folder where do you want your repository to be downloaded
