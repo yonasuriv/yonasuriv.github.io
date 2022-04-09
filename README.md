@@ -1,4 +1,4 @@
-# Setting up GitHub
+<!-- # Setting up GitHub
 # Getting the repository
 - Open your terminal and navigate to the folder where do you want your repository to be downloaded
   - Navigate to the folder where do you want your repository to be downloaded
@@ -118,4 +118,4 @@ You may now cache the provided record on your computer to store the token.
 - Use ```git commit -m 'your message'``` to save your changes
 - Use ```git pull ```
 - Use ```git push```
-
+-->
