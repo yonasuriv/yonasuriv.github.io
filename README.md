@@ -1,7 +1,7 @@
 # Setting up GitHub
 # Getting the repository
 - Open your terminal and navigate to the folder where do you want your repository to be downloaded
-  - Navigate to the folder where do you want your repository to be downloadedG
+  - Navigate to the folder where do you want your repository to be downloaded
   - Open in terminal (right click)
 
 > If using Linux, you can also use the *cd* command, like:
