@@ -2,126 +2,146 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <title>CodePen - Terminal</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <style>
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-.main-wrapper {
-  font-size: 15vmin;
-  background-color: #252627;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+  background: #25313e;
+  color: #fff;
+  font-family: "Proxima Nova", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 2rem;
 }
 
-.signboard-wrapper {
-  width: 75vmin;
-  height: 55vmin;
-  margin: 20px;
+
+h1 {
+  color: #506479;
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.window {
+  width: 80%;
+  margin: 0 auto 2rem;
+  box-shadow: 0 0.25rem 0.5rem #12181e;
+  border-radius: 0 0 0.1rem 0.1rem;
+}
+
+.bar {
+  background: #191919;
+  height: 36px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.btn::before, .btn::after, .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  display: block;
+}
+
+.btn {
+  background: #f6b73e;
   position: relative;
-  flex-shrink: 0;
-  transform-origin: center 2.5vmin;
-  animation: 1000ms init forwards, 1000ms init-sign-move ease-out 1000ms, 3000ms sign-move 2000ms infinite;
+  margin-left: 38px;
+  top: 12px;
 }
-.signboard-wrapper .signboard {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  background-color: #ff8000;
-  width: 100%;
-  height: 35vmin;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn::before, .btn::after {
+  content: " ";
   position: absolute;
-  bottom: 0;
-  border-radius: 4vmin;
-  text-shadow: 0 -0.015em #be2b00;
-  box-shadow: 0 2vmin 4vmin 1vmin rgba(107, 107, 107, 0.8);
 }
-.signboard-wrapper .string {
-  width: 30vmin;
-  height: 30vmin;
-  border: solid 0.9vmin #893d00;
-  border-bottom: none;
-  border-right: none;
-  position: absolute;
-  left: 50%;
-  transform-origin: top left;
-  transform: rotate(45deg);
+.btn::before {
+  background: #f55551;
+  margin-left: -20px;
 }
-.signboard-wrapper .pin {
-  width: 5vmin;
-  height: 5vmin;
-  position: absolute;
-  border-radius: 50%;
-}
-.signboard-wrapper .pin.pin1 {
-  background-color: #9f9f9f;
-  top: 0;
-  left: calc(50% - 2.5vmin);
-}
-.signboard-wrapper .pin.pin2, .signboard-wrapper .pin.pin3 {
-  background-color: #d83000;
-  top: 21.5vmin;
-}
-.signboard-wrapper .pin.pin2 {
-  left: 13vmin;
-}
-.signboard-wrapper .pin.pin3 {
-  right: 13vmin;
+.btn::after {
+  background: #32c146;
+  margin-left: 20px;
 }
 
-@keyframes init {
-  0% {
-    transform: scale(0);
-  }
-  40% {
-    transform: scale(1.1);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-  80% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+.body {
+  height: 10rem;
+  background: #232323;
+  padding: 18px;
 }
-@keyframes init-sign-move {
-  100% {
-    transform: rotate(3deg);
-  }
+.body pre {
+  margin: 0;
 }
-@keyframes sign-move {
+.body .pulse {
+  -webkit-animation: pulse 1s ease-in-out infinite;
+  -moz-animation: pulse 1s ease-in-out infinite;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulse {
   0% {
-    transform: rotate(3deg);
+    opacity: 0;
   }
   50% {
-    transform: rotate(-3deg);
+    opacity: 1;
   }
   100% {
-    transform: rotate(3deg);
+    opacity: 0;
   }
+}
+@-moz-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.command {
+  color: #32c146;
+}
+
+.comment {
+  opacity: 0.5;
 }
 </style>
 <body>
 <!-- partial:index.partial.html -->
-<div class="main-wrapper">
-  <div class="signboard-wrapper">
-    <div class="signboard">Private</div>
-    <div class="string"></div>
-    <div class="pin pin1"></div>
-    <div class="pin pin2"></div>
-    <div class="pin pin3"></div>
+<h1>
+</h1>
+<p>
+</p>
+<div class="window">
+  <div class="bar">
+    <div class="btn"></div>
+  </div>
+  <div class="body">
+    <pre><div class="comment"># run this command:</div><div class="prompt">$ <span class="command">cd projects</span></div><div class="prompt">cd: no such file or directory: projects</div><div class="prompt">Currently all your projects are private.</div><div class="prompt">$ <span class="pulse">_</span></div></pre>
   </div>
 </div>
+<footer>
+</footer>
 <!-- partial -->
   
 </body>
