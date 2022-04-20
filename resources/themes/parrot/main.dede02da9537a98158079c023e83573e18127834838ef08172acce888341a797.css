@@ -417,7 +417,7 @@ a.button.wide {
  padding:20px
 }
 .dark-theme .header {
- background:#111927
+ background:#252627
 }
 .header__right {
  flex-direction:row;
@@ -472,7 +472,7 @@ a.button.wide {
  display:inline-block;
  width:10px;
  height:1rem;
- background:#9FEF00;
+ background:#ff8000;
  margin-left:5px;
  border-radius:1px;
  animation:cursor 1s infinite
@@ -499,7 +499,7 @@ a.button.wide {
  z-index:9999
 }
 .dark-theme .menu {
- background:#111927
+ background:#252627
 }
 @media (max-width: 684px) {
  .menu {
@@ -587,7 +587,7 @@ body {
  }
 }
 body.dark-theme {
- background-color:#141D2B;
+ background-color:#292a2d;
  color:#A1A1A1
 }
 h2,
