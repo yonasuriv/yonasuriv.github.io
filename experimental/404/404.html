@@ -1,5 +1,11 @@
-:root {
-  box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>404</title>
+  <meta name="theme-color" content="#101119"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<style>:root {
   cursor: default;
 }
 
@@ -127,7 +133,6 @@ html, body {
   color: #00A9FA;
   text-decoration: none;
   font-weight: 700;
-  border: 2px solid ##00A9FA;
   text-transform: uppercase;
   padding: 5px 30px;
   box-shadow: inset 0 0 0 0 #3dc9d34d;
@@ -157,8 +162,6 @@ html, body {
   transform: translate(-50%, 0) scale(1, 1);
   transform-origin: center;
   background-color: #11111b;
-  width: 90%;
-  height: 5px;
   transition: 225ms ease-in-out all;
   mix-blend-mode: hard-light;
 }
@@ -330,4 +333,23 @@ html, body {
   100% {
     clip: rect(29px, 9999px, 67px, 0);
   }
-}
+}</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="error-body">
+	<video preload="auto" class="background" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/396624/err.mp4" autoplay muted loop></video>
+	<div class="message">
+		<h1 t="404">404</h1>
+		<div class="bottom">
+			<p>You have lost your way, the page does not exist. </p>
+			<a href="https://www.yonasuriv.com">return back to home</a>
+		</div>
+	</div>
+</section>
+<!-- partial -->
+  <script>"use strict";</script>
+
+</body>
+</html>
+
